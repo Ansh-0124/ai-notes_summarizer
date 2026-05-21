@@ -1,45 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         xsi:Build a full-stack AI-powered application called “AI Travel Buddy Finder,” a modern mobile and web platform that helps travelers find compatible travel partners based on destination, travel timing, interests, personality, budget, language, and travel style. The platform should work like a combination of Tinder, Bumble, and Couchsurfing, but specifically designed for safe and smart travel companionship. The application must include secure authentication using email/password, Google login, JWT authentication, password recovery, and protected sessions. Users should be able to create detailed profiles containing name, age, gender, bio, profile photo, interests, languages spoken, budget preference, travel vibe, music taste, food preference, social links, verification badge, and ratings. The app should allow users to post trips with details such as source location, destination, travel date and time, transport type, budget, duration, purpose of trip, available seats, and additional notes.
+
+The core functionality of the platform should be an AI-based matching system that intelligently calculates compatibility between travelers. The matching algorithm should analyze interest similarity, route similarity, travel timing, budget compatibility, personality match, travel style, and user ratings to generate a compatibility score. The scoring formula should prioritize 40% interest matching, 25% route similarity, 15% budget similarity, 10% personality compatibility, and 10% timing compatibility. Use machine learning techniques such as cosine similarity, vector embeddings, or NLP-based personality analysis to improve recommendation quality. The app must include a swipe-based matching system where users can swipe left to reject, swipe right to accept, and use a “super match” feature for high-priority requests. A match should only be created when both users mutually accept each other.
+
+The platform should also include a real-time chat system powered by Socket.io, supporting text messaging, typing indicators, read receipts, image sharing, emojis, and voice notes. Integrate Google Maps API to provide live location sharing, nearby traveler discovery, route visualization, and distance calculations. Safety should be a major focus of the application, so include government ID verification, report and block functionality, emergency SOS features, women-only matching mode, fake profile detection, AI scam detection, and a user rating and review system. Add advanced AI features such as AI-generated travel recommendations, personalized itinerary generation, travel personality analysis, AI safety alerts, and a smart travel assistant chatbot.
+
+The application should have a modern premium UI/UX with dark mode, glassmorphism effects, smooth animations, swipe card interactions, responsive layouts, and a mobile-first design approach. Use a black, purple, blue-gradient, and white accent color palette to create a startup-quality interface. Required screens include splash screen, onboarding pages, login/register pages, swipe matching feed, trip creation page, user profile page, chat screen, map screen, notifications, AI recommendations section, safety center, settings, and an admin dashboard. The admin panel should provide user management, report handling, analytics, fake profile detection, trip monitoring, match statistics, and platform insights.
+
+Use React Native for the mobile application, Next.js for the web frontend, Tailwind CSS for styling, and Framer Motion for animations. Build the backend using Node.js and Express.js with MongoDB and Mongoose for database management. Create a separate Python microservice using Scikit-learn and NLP libraries for AI matching and recommendation logic. Use Firebase Authentication or JWT for authentication and Socket.io for real-time communication. Deploy the platform using AWS or Firebase services.
+
+Generate a complete production-ready project including frontend architecture, backend architecture, scalable folder structure, reusable UI components, API routes, middleware, MongoDB schemas for users, trips, matches, chats, notifications, reports, and reviews, authentication flow, AI matching engine, deployment configuration, README documentation, ER diagrams, and complete setup instructions. The codebase should be clean, modular, scalable, optimized, secure, and fully responsive, designed with real-world startup-level quality and usability in mind.
+="http://maven.apache.org/POM/4.0.0
          https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>org.springframework.boot</groupId>
-    <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.5.5</version>
-    <relativePath/>
-  </parent>
-
-  <groupId>com.myanatomy</groupId>
-  <artifactId>sandboxpro</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>sandboxpro</name>
-  <description>Demo setup for Java Spring Boot</description>
-
-  <properties>
-    <java.version>21</java.version>
-  </properties>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-      </plugin>
-    </plugins>
-  </build>
-</project>
+ 
